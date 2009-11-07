@@ -1,0 +1,20 @@
+NAME
+    This is Gauche module memo(memoizing macro).
+
+VERSION
+    0.0.1
+
+INSTALLATION
+    1. memo.scm add copy to *load-path* directory.
+
+SYNOPSIS
+    (use memo)
+    (define&memo (fib n)
+        (if (< n 2)
+            n
+            (+ (fib (- n 1)) (fib (- n 2)))))
+    (fib 30)
+    (fib 30)
+
+AUTHOR
+    Takuya Mannami <mtakuya@users.sourceforge.jp>
