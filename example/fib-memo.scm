@@ -1,5 +1,5 @@
 (use memo)
-(define&memo (fib n)
+(define-memo (fib n)
   (if (< n 2)
       n
       (+ (fib (- n 1)) (fib (- n 2)))))

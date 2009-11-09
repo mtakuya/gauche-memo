@@ -32,12 +32,12 @@
 ;;;
 
 (define-module memo
-  (export define&memo)
+  (export define-memo)
 )
 
 (select-module memo)
 
-(define-syntax define&memo
+(define-syntax define-memo
   (syntax-rules ()
     ((_ (proc v ...) e1 e2 ...)
      (define proc 
